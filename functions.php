@@ -49,7 +49,8 @@ require_once('library/custom-post-type.php'); // you can disable this if you lik
 
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 150, true );
-add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'bones-thumb-300', 300, 300, true );
+
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you
@@ -160,6 +161,39 @@ function bones_wpsearch($form) {
 	</form>';
 	return $form;
 } // don't remove this bracket!
+
+function wptuts_googlefonts_styles() {
+  // Enqueue the font stylesheets like this:
+  wp_enqueue_style( 'googlefonts-lato', 'http://fonts.googleapis.com/css?family=Lato' );
+  wp_enqueue_style( 'googlefonts-pt-sans', 'http://fonts.googleapis.com/css?family=PT+Sans' );
+}  
+add_action( 'wp_enqueue_scripts', 'wptuts_googlefonts_styles' );
+
+function my_masonry() {
+  if (!is_admin()) {
+    wp_register_script('jquery_masonry', get_template_directory_uri(). '/library/js/jquery.masonry.min.js', array('jquery'), '2.0.110526' );
+    wp_enqueue_script('jquery_masonry');
+    add_action('wp_footer', 'add_my_masonry');
+
+    function add_my_masonry() { ?>
+      <script>
+	jQuery(window).load( function()
+			{
+	    
+	    jQuery('#content').masonry({
+	      itemSelector: '.post',
+		  columnWidth:  390
+		  }).masonry("reload");
+                
+
+	  });
+      </script>
+	  <?php
+    }
+  }
+}
+
+add_action('init', 'my_masonry');
 
 
 ?>

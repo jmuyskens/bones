@@ -1,6 +1,7 @@
 /******************************************************************
-Site Name:
-Author:
+
+Site Name: labashida
+Author: John Muyskens
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -28,6 +29,8 @@ and will be used across all viewports.
 ******************************************************************/
 
 
+@import "_mixins";
+
 
 
 /*********************
@@ -38,10 +41,12 @@ html, body {
 	/* height: 100%; */
 }
 body {
-	font-family: @serif;
-	font-size: 100%;
+
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
 	line-height: 1.5;
-	color: #565656;
+	color: #3e3e3e;
+    background: #e8e8e8; /* main background color */
 }
 
 /********************
@@ -100,11 +105,13 @@ body {
 *********************/
 
 a, a:visited {
-	color: @link-color;
+
+	color: #fff;
 
 	/* on hover */
 	&:hover, &:focus {
-		color: @link-hover;
+		color: #838383;
+
 	}
 
 	/* on click */
@@ -128,9 +135,11 @@ a, a:visited {
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-	font-family: @sans-serif;
+
+	font-family: 'Lato', serif;
 	text-rendering: optimizelegibility;
-	font-weight: 400;
+	font-weight: 500;
+
 	/*
 	if you're going to use webfonts, be sure to check your weights
 	http://css-tricks.com/watch-your-font-weight/
@@ -139,13 +148,21 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	/* removing text decoration from all headline links */
 	a {
 		text-decoration: none;
+
+        color: #19171A;
+
 	}
 }
 
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
+
+
 }
+
+
+
 
 h2, .h2 {
 	font-size: 1.75em;
@@ -173,6 +190,11 @@ h5, .h5 {
 06. HEADER STYLES
 *********************/
 
+#cmulogo {
+    height: 100px;
+    float:right;
+}
+
 .header {
 	#inner-header {}
 
@@ -197,7 +219,8 @@ h5, .h5 {
 
 /*
 all navs have a .nav class applied via
-the wp_menu function; this is so we can
+
+the_menu function; this is so we can
 easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
@@ -300,11 +323,23 @@ and more scalable.
 
 		.page-title {}
 
-		.archive-title { }
+
+		.archive-title {}
 
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
-		.post {}            /* general post style */
+		.post {
+            width: 350px;
+            background-color: #fff;
+            padding: 25px;
+            margin: 20px;
+            
+        }            /* general post style */
+        .single-post .post {
+            width: 640px;
+        }
+        
+
 		.page {}            /* general article on a page style */
 		.attachment {}      /* general style on an attatchment */
 		.sticky {}          /* sticky post style */
@@ -313,6 +348,11 @@ and more scalable.
 		.tag-slug {}        /* style by tag (i.e. tag-news) */
 
 		/* post meta */
+
+        .meta {
+            color:#444;
+        }   
+
 		.byline {
 			color: #999;
 

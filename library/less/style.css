@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name: labashida
-Author: John Muyskens
+Site Name:
+Author:
 
 Stylesheet: Main Stylesheet
 
@@ -741,9 +741,8 @@ you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 */
 /******************************************************************
-
-Site Name: labashida
-Author: John Muyskens
+Site Name:
+Author:
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -1024,8 +1023,8 @@ body {
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
   line-height: 1.5;
-  color: #3e3e3e;
-  background: #e8e8e8;
+  color: #19171A;
+  background: #ED7626;
   /* main background color */
 
 }
@@ -1092,7 +1091,7 @@ a:hover,
 a:visited:hover,
 a:focus,
 a:visited:focus {
-  color: #838383;
+  color: #ebe16f;
 }
 a:link,
 a:visited:link {
@@ -1117,7 +1116,7 @@ h4,
 .h4,
 h5,
 .h5 {
-  font-family: 'Lato', serif;
+  font-family: 'Arvo', serif;
   text-rendering: optimizelegibility;
   font-weight: 500;
   /*
@@ -1171,17 +1170,12 @@ h5,
 /*********************
 06. HEADER STYLES
 *********************/
-#cmulogo {
-  height: 100px;
-  float: right;
-}
 /*********************
 07. NAVIGATION STYLES
 *********************/
 /*
 all navs have a .nav class applied via
-
-the_menu function; this is so we can
+the wp_menu function; this is so we can
 easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
@@ -1234,16 +1228,7 @@ and more scalable.
 /* end .hentry */
 /* want to style individual post classes? Booya! */
 /* post by id (i.e. post-3) */
-.post {
-  width: 350px;
-  background-color: #fff;
-  padding: 25px;
-  margin: 20px;
-}
 /* general post style */
-.single-post .post {
-  width: 640px;
-}
 /* general article on a page style */
 /* general style on an attatchment */
 /* sticky post style */
