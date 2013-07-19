@@ -54,9 +54,9 @@
 					<?php // bloginfo('description'); ?>
 
 
-					<!-- <nav role="navigation">
+					<nav role="navigation">
 						<?php bones_main_nav(); ?>
-					</nav> -->
+					</nav>
 
 				</div> <!-- end #inner-header -->
 

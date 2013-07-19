@@ -23,11 +23,13 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+#cmulogo {
+  display: block;
+}
 /*********************
 NAVIGATION STYLES
 *********************/
 .nav {
-  background: #eee;
   border: 0;
   /* end .menu ul li */
 

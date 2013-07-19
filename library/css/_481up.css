@@ -47,6 +47,9 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+.post {
+  width: 350px;
+}
 /* entry content */
 .entry-content {
   /* at this larger size, we can start to align images */

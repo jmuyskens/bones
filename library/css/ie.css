@@ -309,6 +309,9 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+.post {
+  width: 350px;
+}
 /* entry content */
 .entry-content {
   /* at this larger size, we can start to align images */
@@ -459,11 +462,13 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
+#cmulogo {
+  display: block;
+}
 /*********************
 NAVIGATION STYLES
 *********************/
 .nav {
-  background: #eee;
   border: 0;
   /* end .menu ul li */
 

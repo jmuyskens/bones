@@ -41,7 +41,6 @@ html, body {
 	/* height: 100%; */
 }
 body {
-
 	font-family: 'PT Sans', sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
@@ -158,7 +157,6 @@ h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
 
-
 }
 
 
@@ -191,6 +189,7 @@ h5, .h5 {
 *********************/
 
 #cmulogo {
+    display: none;
     height: 100px;
     float:right;
 }
@@ -227,7 +226,7 @@ and more scalable.
 */
 
 .nav {
-	border: 1px solid #ccc;
+	
 	border-bottom: 0;
 
 	li {
@@ -236,8 +235,8 @@ and more scalable.
 			display: block;
 			text-decoration: none;
 			padding: 10px 10px;
-			background-color: #eee;
-			border-bottom: 1px solid #ccc;
+			font-size: 1.2em;
+            color: #5d5d5d;
 
 			/*
 			remember this is for mobile ONLY, so there's no need
@@ -303,6 +302,7 @@ and more scalable.
 *********************/
 
 #content {
+    width:100%;
 	margin-top: 2.2em;
 
 	#inner-content {}
@@ -329,16 +329,20 @@ and more scalable.
 		/* want to style individual post classes? Booya! */
 		.post-id {}         /* post by id (i.e. post-3) */
 		.post {
-            width: 350px;
+		    width:350px;
+            max-width: 100%;
             background-color: #fff;
             padding: 25px;
-            margin: 20px;
+            margin: 10px;
             
         }            /* general post style */
         .single-post .post {
-            width: 640px;
+            width: auto;
         }
-        
+        .wp-post-image {
+	    max-width:100%;
+	    height:auto;
+	}
 
 		.page {}            /* general article on a page style */
 		.attachment {}      /* general style on an attatchment */

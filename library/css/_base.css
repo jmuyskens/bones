@@ -430,6 +430,7 @@ h5,
 06. HEADER STYLES
 *********************/
 #cmulogo {
+  display: none;
   height: 100px;
   float: right;
 }
@@ -445,7 +446,6 @@ the navs on the site so our css is cleaner
 and more scalable.
 */
 .nav {
-  border: 1px solid #ccc;
   border-bottom: 0;
   /* end .menu li */
 
@@ -468,8 +468,8 @@ and more scalable.
   display: block;
   text-decoration: none;
   padding: 10px 10px;
-  background-color: #eee;
-  border-bottom: 1px solid #ccc;
+  font-size: 1.2em;
+  color: #5d5d5d;
   /*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -487,6 +487,7 @@ and more scalable.
 08. POSTS & CONTENT STYLES
 *********************/
 #content {
+  width: 100%;
   margin-top: 2.2em;
 }
 /* end .hentry */
@@ -494,13 +495,18 @@ and more scalable.
 /* post by id (i.e. post-3) */
 .post {
   width: 350px;
+  max-width: 100%;
   background-color: #fff;
   padding: 25px;
-  margin: 20px;
+  margin: 10px;
 }
 /* general post style */
 .single-post .post {
-  width: 640px;
+  width: auto;
+}
+.wp-post-image {
+  max-width: 100%;
+  height: auto;
 }
 /* general article on a page style */
 /* general style on an attatchment */

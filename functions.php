@@ -182,7 +182,7 @@ function my_masonry() {
 	    
 	    jQuery('#content').masonry({
 	      itemSelector: '.post',
-		  columnWidth:  390
+
 		  }).masonry("reload");
                 
 
