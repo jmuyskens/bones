@@ -182,7 +182,8 @@ function my_masonry() {
 	    
 	    jQuery('#content').masonry({
 	      itemSelector: '.post',
-
+		  columnWidth: 370,
+		  stamp: '.stamp'
 		  }).masonry("reload");
                 
 

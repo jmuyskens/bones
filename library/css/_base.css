@@ -287,6 +287,10 @@ body {
   /* main background color */
 
 }
+a,
+a:visited {
+  color: #5F5F5F;
+}
 /********************
 02. WORDPRESS BODY CLASSES
     style a page via class
@@ -338,7 +342,7 @@ body {
 *********************/
 a,
 a:visited {
-  color: #fff;
+  color: #555;
   /* on hover */
 
   /* on click */
@@ -430,9 +434,13 @@ h5,
 06. HEADER STYLES
 *********************/
 #cmulogo {
+  margin-top: 2em;
   display: none;
   height: 100px;
   float: right;
+}
+.arch {
+  color: #B6B6B6;
 }
 /*********************
 07. NAVIGATION STYLES
