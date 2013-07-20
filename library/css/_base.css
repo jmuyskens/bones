@@ -440,13 +440,22 @@ h5,
 /*********************
 06. HEADER STYLES
 *********************/
+#iologo {
+  width: 100px;
+  margin: 0 auto;
+}
+.iologo {
+  padding-top: 1.5em;
+  width: 100px;
+  margin: 0 auto;
+}
 #cmulogo {
   margin-top: 2em;
   display: none;
   height: 100px;
   float: right;
 }
-.single-post #logo {
+#logo {
   display: none;
 }
 .arch {
@@ -465,8 +474,11 @@ and more scalable.
 */
 #navtoggle {
   font-family: 'Lato', serif;
+  font-size: 3em;
+  text-align: center;
   margin: 0 auto;
-  width: 20px;
+  width: 100%;
+  height: 40px;
 }
 .nav {
   font-family: 'Lato', serif;

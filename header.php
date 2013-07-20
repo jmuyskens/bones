@@ -46,9 +46,10 @@
 			<header class="header" role="banner">
 
 				<div id="inner-header" class="wrap clearfix">
-
+				       
 					<a href="http://www.cmu.edu"><img id="cmulogo" src="<?php echo get_template_directory_uri(); ?>/library/images/CMU_logo_stack_white.png"></a>
-					<!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
+				       <div class="iologo"><a href="<?php echo home_url(); ?>" rel="nofollow"><img id="iologo" src="<?php echo get_template_directory_uri(); ?>/library/images/iologo.svg"></a></div>
+				       <!-- to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> -->
 					<p id="logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><?php bloginfo('name'); ?></a>
 					<?php if (is_category()) { ?>
 								

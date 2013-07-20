@@ -23,7 +23,13 @@ NAVIGATION STYLES
 #navtoggle {
   display: none;
 }
-.single-post #logo {
+.iologo {
+  width: auto;
+  margin: 10px;
+  float: left;
+}
+#logo {
+  padding-top: 1em;
   display: block;
 }
 /* .menu is clearfixed inside mixins.scss */
