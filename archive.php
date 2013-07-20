@@ -11,7 +11,7 @@
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article">
-
+									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
 								<header class="article-header">
 
 									<h3 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
@@ -23,7 +23,7 @@
 
 								<section class="entry-content clearfix">
 
-									<?php the_post_thumbnail( 'bones-thumb-300' ); ?>
+
 
 									<?php the_excerpt(); ?>
 

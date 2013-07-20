@@ -182,12 +182,21 @@ function my_masonry() {
 	    
 	    jQuery('#content').masonry({
 	      itemSelector: '.post',
-		  columnWidth: 370,
-		  stamp: '.stamp'
+	      columnWidth: 370,
+	      stamp: '.stamp'
 		  }).masonry("reload");
-                
+	    var rot = 0;
+	    jQuery('#navtoggle').on('click', function() {
+		rot += 180;
+		jQuery('.nav').slideToggle();
+		jQuery(this).css("-webkit-transition",".5s");
+		jQuery(this).css("-moz-transition",".5s");
+		jQuery(this).css("-moz-transform","rotateX("+rot+"deg)");
+		jQuery(this).css("-webkit-transform","rotateX("+rot+"deg)");
+	      });
 
 	  });
+      
       </script>
 	  <?php
     }
@@ -196,5 +205,8 @@ function my_masonry() {
 
 add_action('init', 'my_masonry');
 
+/*************** navigation toggle for small displays ***********/
+
 
 ?>
+

@@ -17,6 +17,15 @@ upon your base.less styles.
 /*********************
 NAVIGATION STYLES
 *********************/
+.nav {
+  display: block;
+}
+#navtoggle {
+  display: none;
+}
+.single-post #logo {
+  display: block;
+}
 /* .menu is clearfixed inside mixins.scss */
 .menu {
   /* end .menu ul */
@@ -49,6 +58,9 @@ POSTS & CONTENT STYLES
 *********************/
 .post {
   width: 350px;
+}
+#content {
+  margin-top: 2.2em;
 }
 /* entry content */
 .entry-content {

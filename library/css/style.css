@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
 /******************************************************************
 Site Name: labashida
 Author: John Muyskens
@@ -1021,7 +1022,8 @@ body {
 
 }
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Merriweather', sans-serif;
+  font-weight: 300;
   font-size: 14px;
   line-height: 1.5;
   color: #3e3e3e;
@@ -1147,26 +1149,31 @@ h5 a,
 }
 h1,
 .h1 {
+  font-family: 'Lato', serif;
   font-size: 2.5em;
   line-height: 1.333em;
 }
 h2,
 .h2 {
+  font-family: 'Lato', serif;
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em;
 }
 h3,
 .h3 {
+  font-family: 'Lato', serif;
   font-size: 1.125em;
 }
 h4,
 .h4 {
+  font-family: 'Lato', serif;
   font-size: 1.1em;
   font-weight: 700;
 }
 h5,
 .h5 {
+  font-family: 'Lato', serif;
   font-size: 0.846em;
   line-height: 2.09em;
   text-transform: uppercase;
@@ -1180,6 +1187,9 @@ h5,
   display: none;
   height: 100px;
   float: right;
+}
+.single-post #logo {
+  display: none;
 }
 .arch {
   color: #B6B6B6;
@@ -1195,7 +1205,15 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
+#navtoggle {
+  font-family: 'Lato', serif;
+  margin: 0 auto;
+  width: 20px;
+}
 .nav {
+  font-family: 'Lato', serif;
+  font-weight: 400;
+  display: none;
   border-bottom: 0;
   /* end .menu li */
 
@@ -1238,7 +1256,7 @@ and more scalable.
 *********************/
 #content {
   width: 100%;
-  margin-top: 2.2em;
+  margin-top: 0em;
 }
 /* end .hentry */
 /* want to style individual post classes? Booya! */
@@ -1632,6 +1650,15 @@ tweeners.
   /*********************
   NAVIGATION STYLES
   *********************/
+  .nav {
+    display: block;
+  }
+  #navtoggle {
+    display: none;
+  }
+  .single-post #logo {
+    display: block;
+  }
   /* .menu is clearfixed inside mixins.scss */
   .menu {
     /* end .menu ul */
@@ -1664,6 +1691,9 @@ tweeners.
   *********************/
   .post {
     width: 350px;
+  }
+  #content {
+    margin-top: 2.2em;
   }
   /* entry content */
   .entry-content {
@@ -1970,7 +2000,7 @@ you can add resource intensive styles.
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 */
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1441px) {
   /******************************************************************
   Site Name: 
   Author: 
@@ -1981,6 +2011,9 @@ This is for the larger monitors and possibly full screen viewers.
   on larger screens.
   
   ******************************************************************/
+  #inner-content {
+    max-width: 100%;
+  }
 }
 /*
 RETINA (2x RESOLUTION DEVICES)
